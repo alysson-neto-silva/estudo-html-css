@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagem de fundo</title>
+    <style>
+
+        body {
+            background-image: url('../ex022/wallpaper001.jpg');
+        }
+        div.quadrado {
+            border: 2px solid black;
+            width: 300px;
+            height: 300px;
+            display: inline-block;
+            border-radius: 10px;
+            background-color: lightgray;
+        }
+
+        div#q1 {
+            background-color: skyblue;
+        }
+
+        div#q2 {
+            background-image: linear-gradient(to bottom, yellow, red);
+        }
+
+        div#q3 {
+            background-image: url('pattern003.png');
+        }
+
+        input{
+            border-radius: 5px;
+            background-color:yellowgreen;
+        }
+
+    </style>
+</head>
+<body>
+    <form >
+        
+            <input type="text" name="nome" placeholder="Nome" ><br>
+            <input type="email" name="email" placeholder="E-mail"><br>
+            <input type="tel" name="tel" placeholder="(xx) x xxxx-xxxx"><br>
+            <input type="number" name="idade" placeholder="Idade" ><br>
+            <input type="range" name="urgencia" min="0" max="100" step="1"><br>
+            <input type="checkbox" name="dia-da-semana" value="2"/> Segunda-feira <br>
+            <input type="checkbox" name="dia-da-semana" value="3"/>Terça_feira <br>
+            <input type="radio" name="horario" value="manha"> Manhã <br>
+            <input type="radio" name="horario" value="tarde"> Tarde <br>
+            <input type="radio" name="horario" value="noite"> Noite <br>
+            <textarea name="text" id="text" cols="30" rows="10"></textarea><br>
+            Cidade:<input list="cidade" name="cidade"/>
+            <datalist id="cidade">
+                
+                <option value="">Selecione a cidade</option>
+                <option value="Ouro Branco">Ouro Branco</option>
+                <option value="La Conga">La Conga</option>
+            </datalist>
+            <button type="button">Outra ação</button>
+            <button type="reset">Limpar</button>
+            <button type="submit">Enviar</button>
+            <input type="submit">
+            </select>
+        
+    </form>
+
+    <div class="quadrado" id="q1"></div>
+
+    <div class="quadrado" id="q2"></div>
+
+    <div class="quadrado" id="q3"></div>
+</body>
+</html>
